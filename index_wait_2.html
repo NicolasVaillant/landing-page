@@ -1,0 +1,68 @@
+<html lang="fr">
+<head>
+    <title>Accueil</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="N.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/index_wait_2.css">
+</head>
+<body>
+<div class="container">
+    <div class="main" id="blur">
+        <div class="theme"><p>Site en construction</p></div>
+        <div class="auteur"><p>- Nicolas Vaillant -</p></div>
+<!--        <div class="loader-6 center"><span></span></div>-->
+        <div class="contact">
+            <a href="#" onclick="toggle()" id="show">
+                <img id="info" src="img/info.png" alt="info"/>
+            </a>
+        </div>
+    </div>
+</div>
+<div id="popup">
+    <main style="display: contents">
+        <form class="contact_form" id="form_mail" action="wait/php/form.php" method="post">
+            <h1>Me contacter</h1>
+            <div class="left">
+                <div class="inp-wrap">
+                    <input type="text" id="name" class="inp-anim" placeholder="Nom" name="name" required> <!-- required-->
+                </div>
+
+                <div class="inp-wrap">
+                    <input type="text" id="mail" class="inp-anim" placeholder="Mail" name="mail" required pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}">
+                </div>
+            </div>
+
+            <div class="inp-wrap">
+                <input type="text" id="subject" class="inp-anim" placeholder="Sujet" name="subject" required>
+            </div>
+
+            <div class="inp-wrap">
+                <textarea name="message" id="textarea" placeholder="Message"></textarea>
+
+            </div>
+
+            <div class="verif">
+                <input type="text" id="verify_input" placeholder="None" required title="Résoudre le calcul" required>
+                <button class="button_submit" type="submit" name="submit">Envoyer</button>
+            </div>
+
+            <span class="inpspan"></span>
+        </form>
+    </main>
+    <a href="#" onclick="toggle()" id="close">
+        <img id="close_exit" src="img/exit.png" height="40" width="40" alt="exit"/>
+    </a>
+    <div class="bar_left">
+        <div class="social">
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/nicolas-vaillant-1234abcd/" target="_blank"><img src="img/linkedin.png"></a>
+                <a href="https://github.com/NicolasVaillant" target="_blank"><img src="img/git.png"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
